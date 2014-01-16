@@ -1,0 +1,28 @@
+<?php
+/* @var $this UserController */
+/* @var $model User */
+
+$this->breadcrumbs=array(
+	'Users'=>array('index'),
+	$model->name=>array('view','id'=>$model->userid),
+	'Update',
+);
+
+$this->menu=array(
+	array('label'=>'List User', 'url'=>array('index')),
+	array('label'=>'Create User', 'url'=>array('create')),
+	array('label'=>'View User', 'url'=>array('view', 'id'=>$model->userid)),
+	array('label'=>'Manage User', 'url'=>array('admin')),
+);
+?>
+<div class="container">
+                 
+<h1>Update User <?php echo $model->userid; ?></h1>
+<?php
+$this->widget('zii.widgets.CMenu', array(
+              'items' =>$this->menu
+));
+?>
+
+<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+</div>
