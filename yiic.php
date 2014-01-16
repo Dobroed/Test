@@ -1,6 +1,6 @@
 <?php
 /**
- *
+ * изменения
  * Yiic.php bootstrap file
  *
  * @author Antonio Ramirez <amigo.cobos@gmail.com>
