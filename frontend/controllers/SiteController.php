@@ -21,6 +21,8 @@ class SiteController extends EController
 	 */
 	public function actionError()
 	{
+           
+            
 		if($error=Yii::app()->errorHandler->error)
 		{
 			if(Yii::app()->request->isAjaxRequest)

@@ -10,7 +10,9 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 return array(
-	'preload' => array('log'),
+       
+        'name'=>'Yii Framework | ',
+            	'preload' => array('log'),
 	'aliases' => array(
 		'frontend' => dirname(__FILE__) . '/../..' . '/frontend',
 		'common' => dirname(__FILE__) . '/../..' . '/common',
@@ -28,17 +30,9 @@ return array(
 		'application.models.*'
 	),
 	'components' => array(
-            'db' => array(
-			'connectionString' => 'mysql:host=yii.loc;dbname=yii',
-			'username' => 'mysql',
-			'password' => 'mysql',
-			'enableProfiling' => true,
-			'enableParamLogging' => true,
-			'charset' => 'utf8',
+		'db'=>array(
+			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 		),
-		//'db'=>array(
-		//	'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
-		//),
 		'errorHandler' => array(
 			'errorAction' => 'site/error',
 		),

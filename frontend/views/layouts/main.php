@@ -26,7 +26,7 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
 
-	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<style>
 		body {
 			padding-top: 60px;
@@ -34,9 +34,9 @@
 		}
 	</style>
 
-	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css">
+	<link rel="stylesheet" href="css/main.css">
 
-	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<script src="js/libs/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -50,7 +50,6 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container">
-                             
 			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -86,21 +85,22 @@
 		</div>
 	</div>
 </div>
-<div class="container">
-          <div class="row">
-                    <?php if(isset($this->breadcrumbs)):?>
-		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
-			'links'=>$this->breadcrumbs,
-		)); ?><!-- breadcrumbs -->
-	<?php endif?>
-                    </div>
-</div>
 
 <?php echo $content; ?>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/bootstrap.min.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/plugins.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/main.js"></script>
+<script src="js/libs/bootstrap.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script><script>
+	var _gaq = [
+		['_setAccount', 'UA-XXXXX-X'],
+		['_trackPageview']
+	];
+	(function (d, t) {
+		var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+		g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g, s)
+	}(document, 'script'));
+</script>
 </body>
 </html>

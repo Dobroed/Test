@@ -1,5 +1,4 @@
-YIInitializr-intermediate 
-изменен
+YIInitializr-intermediate
 =======
 The following is a proposed project structure for basic to intermediate applications that works in conjunction with YIInitializr components. 
 
