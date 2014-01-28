@@ -1,4 +1,8 @@
 YIInitializr-intermediate
+<<<<<<< HEAD
+=======
+изменен
+>>>>>>> bde2382663f1dc3883b46991a93297dfc02de559
 =======
 The following is a proposed project structure for basic to intermediate applications that works in conjunction with YIInitializr components. 
 
